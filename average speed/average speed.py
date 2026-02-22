@@ -57,22 +57,35 @@ if "km" in type_distance:
     if "hours" in type_time:
 
         print("The average speed of the body is:\n")
+
         print(f"{average_speed(val_distance, val_time)}km/h")
+
         miles = km_to_miles(val_distance)
+
         print(f"{average_speed(miles, val_time)}m/h")
+
         meters = km_to_meters(val_distance)
+
         seconds = hours_to_seconds(val_time)
+
         print(f"{average_speed(meters, seconds)}m/s")
 
     elif "minutes" in type_time:
 
         hours = minutes_to_hours(val_time)
+
         seconds = minutes_to_seconds(val_time)
+
         print("The average speed of the body is:\n")
+
         print(f"{average_speed(val_distance, hours)}km/h")
+
         miles = km_to_miles(val_distance)
+
         print(f"{average_speed(miles, hours)}m/h")
+
         meters = km_to_meters(val_distance)
+
         print(f"{average_speed(meters, seconds)}m/s")
 
 
@@ -88,23 +101,35 @@ elif "miles" in type_distance:
     if "hours" in type_time:
 
         meters = miles_to_meters(val_distance)
+
         km = miles_to_km(val_distance)
 
         print("The average speed of the body is:\n")
+
         print(f"{average_speed(km, val_time)}km/h")
+
         print(f"{average_speed(val_distance, val_time)}m/h")
+
         seconds = hours_to_seconds(val_time)
+
         print(f"{average_speed(meters, seconds)}m/s")
 
     elif "minutes" in type_time:
 
         hours = minutes_to_hours(val_time)
+
         seconds = minutes_to_seconds(val_time)
+
+        meters = miles_to_meters(val_distance)
+
+        km = miles_to_km(val_distance)
+
         print("The average speed of the body is:\n")
-        print(f"{average_speed(val_distance, hours)}km/h")
-        miles = km_to_miles(val_distance)
-        print(f"{average_speed(miles, hours)}m/h")
-        meters = km_to_meters(val_distance)
+
+        print(f"{average_speed(km, hours)}km/h")
+
+        print(f"{average_speed(val_distance, hours)}m/h")
+
         print(f"{average_speed(meters, seconds)}m/s")
 
 elif "meters" in type_distance:
@@ -117,21 +142,34 @@ elif "meters" in type_distance:
 
     if "hours" in type_time:
 
+        miles = meters_to_miles(val_distance)
+
+        km = meters_to_km(val_distance)
+
         print("The average speed of the body is:\n")
-        print(f"{average_speed(val_distance, val_time)}km/h")
-        miles = km_to_miles(val_distance)
+
+        print(f"{average_speed(km, val_time)}km/h")
+
         print(f"{average_speed(miles, val_time)}m/h")
-        meters = km_to_meters(val_distance)
+
         seconds = hours_to_seconds(val_time)
-        print(f"{average_speed(meters, seconds)}m/s")
+
+        print(f"{average_speed(val_distance, seconds)}m/s")
 
     elif "minutes" in type_time:
 
+        miles = meters_to_miles(val_distance)
+
+        km = meters_to_km(val_distance)
+
         hours = minutes_to_hours(val_time)
+
         seconds = minutes_to_seconds(val_time)
+
         print("The average speed of the body is:\n")
-        print(f"{average_speed(val_distance, hours)}km/h")
-        miles = km_to_miles(val_distance)
+
+        print(f"{average_speed(km, hours)}km/h")
+
         print(f"{average_speed(miles, hours)}m/h")
-        meters = km_to_meters(val_distance)
-        print(f"{average_speed(meters, seconds)}m/s")
+        
+        print(f"{average_speed(val_distance, seconds)}m/s")
